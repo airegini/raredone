@@ -77,4 +77,8 @@ Raredone::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+#make sure to set this to your actual host name
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 end
